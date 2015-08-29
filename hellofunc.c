@@ -2,6 +2,6 @@
 #include "hellomake.h"
 
 void myPrintHelloMake(void) {
-  printf("hello makefiles!\n");
+  printf("hello makefiles, everyone!\n");
   return;
 }
