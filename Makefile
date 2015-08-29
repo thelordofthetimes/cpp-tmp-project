@@ -11,4 +11,4 @@ $(program_name): $(source)
 	$(cc) $(source) -o$(outdir)$(program_name)
 
 clean:
-	rm -f $(program_name)
+	rm -rf $(outdir)/*
