@@ -1,0 +1,18 @@
+source=*.cpp *.h
+program_name=libcdnamath
+cc=g++
+
+outdir=build/
+
+all: $(program_name)
+
+asm: $(source)
+	mkdir -p build
+	$(cc) -S $(source) -o $(outdir)$(program_name).asm
+
+$(program_name): $(source)
+	mkdir -p build
+	$(cc) -shared $(source) -o $(outdir)$(program_name).so
+
+clean:
+	rm -rf $(outdir)/*
