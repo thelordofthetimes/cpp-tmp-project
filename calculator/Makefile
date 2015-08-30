@@ -20,7 +20,6 @@ $(program_name): $(source)
 	$(cc) -I$(include_dir) -L$(link_dir) -o $(outdir)$(program_name) $(source) -l$(link) -lboost_system
 
 run: all
-	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/run/media/anhbt/Workspace/cpp/cpp-tmp-project/cdna.math/build
 	./build/calculator
 
 clean:

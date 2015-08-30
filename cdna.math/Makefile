@@ -14,5 +14,8 @@ $(program_name): $(source)
 	mkdir -p build
 	$(cc) -shared $(source) -o $(outdir)$(program_name).so
 
+install: all
+	cp build/* /usr/lib64
+
 clean:
 	rm -rf $(outdir)/*
