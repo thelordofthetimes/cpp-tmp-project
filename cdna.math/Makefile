@@ -1,5 +1,5 @@
 source=*.cpp *.h
-program_name=libcdnamath
+program_name=libcdna.math
 cc=g++
 
 outdir=build/
