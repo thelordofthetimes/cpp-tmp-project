@@ -17,7 +17,8 @@ asm: $(source)
 
 $(program_name): $(source)
 	mkdir -p build
-	$(cc) -I$(include_dir) -L$(link_dir) -o $(outdir)$(program_name) $(source) -l$(link) -lboost_system
+	$(cc) -I$(include_dir) -L$(link_dir) -o $(outdir)$(program_name) \
+           $(source) -l$(link) -lboost_system
 
 run: all
 	./build/calculator

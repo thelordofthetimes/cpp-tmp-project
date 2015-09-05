@@ -2,7 +2,7 @@ source=hellofunc.c main.c hellomake.h
 program_name=hellomake
 cc=g++
 
-outdir=build/
+outdir=./build/
 
 all: $(program_name)
 
@@ -12,3 +12,6 @@ $(program_name): $(source)
 
 clean:
 	rm -rf $(outdir)/*
+
+run: $(all)
+	$(outdir)$(program_name)
