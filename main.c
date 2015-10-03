@@ -1,6 +1,7 @@
 #include "hellomake.h"
 
-int main() {
+int main(int agrc, char **argv) {
+
   myPrintHelloMake();
 
   return 0;
